@@ -11,50 +11,50 @@ El backend está construido en **Node.js**, con enfoque modular, escalable y pre
 
 geo-mvp-backend/
 │
-├── src/
-│   ├── config/               # Configuración general (DB, env, API Keys)
-│   │   ├── db.js             # Conexión a PostgreSQL
-│   │   ├── env.js            # Variables de entorno
-│   │   └── hereConfig.js     # Configuración para API HERE
+├── 📁 src/
+│   ├── 📁 config/               # Configuración general (DB, env, API Keys)
+│   │   ├── db.js                # Conexión a PostgreSQL
+│   │   ├── env.js               # Variables de entorno
+│   │   └── hereConfig.js        # Configuración para API HERE
 │   │
-│   ├── controllers/          # Controladores de endpoints
+│   ├── 📁 controllers/          # Controladores de endpoints
 │   │   ├── geocodeController.js
 │   │   └── uploadController.js
 │   │
-│   ├── routes/               # Rutas del API
+│   ├── 📁 routes/               # Rutas del API
 │   │   ├── geocodeRoutes.js
 │   │   ├── uploadRoutes.js
 │   │   └── index.js
 │   │
-│   ├── services/             # Lógica de negocio y servicios externos
+│   ├── 📁 services/             # Lógica de negocio y servicios externos
 │   │   ├── hereService.js
 │   │   ├── parserService.js
 │   │   ├── exportService.js
 │   │   └── queueService.js
 │   │
-│   ├── jobs/                 # Tareas asincrónicas
+│   ├── 📁 jobs/                 # Tareas asincrónicas
 │   │   └── geocodeJob.js
 │   │
-│   ├── models/               # Modelos de datos
+│   ├── 📁 models/               # Modelos de datos
 │   │   └── geocodeResultModel.js
 │   │
-│   ├── middlewares/          # Middlewares Express
+│   ├── 📁 middlewares/          # Middlewares Express
 │   │   ├── errorHandler.js
 │   │   ├── fileValidator.js
 │   │   └── logger.js
 │   │
-│   ├── utils/                # Helpers y utilidades
+│   ├── 📁 utils/                # Helpers y utilidades
 │   │   ├── csvUtils.js
 │   │   ├── timeUtils.js
 │   │   └── responseUtils.js
 │   │
-│   ├── app.js                # Inicialización de la app
-│   └── server.js             # Configuración base de Express
+│   ├── app.js                   # Inicialización de la app
+│   └── server.js                # Configuración base de Express
 │
-├── scripts/                  # Scripts de despliegue/mantenimiento
+├── 📁 scripts/                  # Scripts de despliegue/mantenimiento
 │   └── init-db.sql
-├── logs/                     # Logs (Winston / PM2)
-├── .env.example              # Variables de entorno de ejemplo
+├── 📁 logs/                     # Logs (Winston / PM2)
+├── .env.example                 # Variables de entorno de ejemplo
 ├── .gitignore
 ├── package.json
 └── README.md
